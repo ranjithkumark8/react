@@ -1,0 +1,30 @@
+{
+  "name": "create-react-app",
+  "version": "1.0.0",
+  "description": "This is create react app project from starch",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ranjithkumark8/react.git"
+  },
+  "keywords": [],
+  "author": "Ranjith",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ranjithkumark8/react/issues"
+  },
+  "homepage": "https://github.com/ranjithkumark8/react#readme",
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "process": "^0.11.10"
+  },
+  "browserslist": [
+    "last 2 versions"
+  ],
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  }
+}
