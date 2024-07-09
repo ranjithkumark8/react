@@ -1,0 +1,17 @@
+.headingContainer {
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+}
+
+.headingContainer:last-child {
+  border: 1px solid red;
+  width: 100px;
+  height: 100px;
+}
+
+.headingContainer:last-child img {
+  border: 1px solid red;
+  border-radius: 50%;
+}
+/*# sourceMappingURL=index.c41b5a0e.css.map */

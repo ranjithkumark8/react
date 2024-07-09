@@ -2957,6 +2957,47 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _client = require("react-dom/client");
 var _clientDefault = parcelHelpers.interopDefault(_client);
+var _heading = require("./Heading");
+// Create a Nested header Element using React.createElement(h1,h2,h3 inside a
+// div with class “title”)
+const heading = /*#__PURE__*/ (0, _reactDefault.default).createElement("div", {
+    className: "title"
+}, [
+    /*#__PURE__*/ (0, _reactDefault.default).createElement("h1", {}, "I'm H1 tag"),
+    /*#__PURE__*/ (0, _reactDefault.default).createElement("h2", {}, "I'm H2 tag"),
+    /*#__PURE__*/ (0, _reactDefault.default).createElement("h3", {}, "I'm H3 tag")
+]);
+const HeadingJsx = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "title",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "I'm h1 tag"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 16,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: "I'm h2 tag"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 17,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                children: "I'm h3 tag"
+            }, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 18,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "App.js",
+        lineNumber: 15,
+        columnNumber: 3
+    }, undefined);
+_c = HeadingJsx;
 // JSX => Babel transpiles it to React.createElement => ReactElement - JS Object => HTMLElement(render)
 // React element
 const jsxHeading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
@@ -2964,7 +3005,7 @@ const jsxHeading = /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
     children: "I'm re-visiting react concepts"
 }, void 0, false, {
     fileName: "App.js",
-    lineNumber: 6,
+    lineNumber: 24,
     columnNumber: 20
 }, undefined);
 // React Components are 2 types - class components and functional components.
@@ -2972,50 +3013,65 @@ const Title = ()=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
         children: "component composition"
     }, void 0, false, {
         fileName: "App.js",
-        lineNumber: 11,
+        lineNumber: 29,
         columnNumber: 21
     }, undefined);
-_c = Title;
+_c1 = Title;
 // Using one component inside another component is called component composition 
 const Heading = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        styles: {
+            width: "100%"
+        },
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Title, {}, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 17,
+                lineNumber: 35,
+                columnNumber: 7
+            }, undefined),
+            heading,
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(HeadingJsx, {}, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 37,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _heading.HeadingComp), {}, void 0, false, {
+                fileName: "App.js",
+                lineNumber: 38,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
                 children: "This is functional component"
             }, void 0, false, {
                 fileName: "App.js",
-                lineNumber: 18,
+                lineNumber: 39,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "App.js",
-        lineNumber: 16,
+        lineNumber: 34,
         columnNumber: 5
     }, undefined);
 };
-_c1 = Heading;
+_c2 = Heading;
 const root = (0, _clientDefault.default).createRoot(document.getElementById("root"));
 root.render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Heading, {}, void 0, false, {
     fileName: "App.js",
-    lineNumber: 24,
+    lineNumber: 45,
     columnNumber: 13
 }, undefined));
-var _c, _c1;
-$RefreshReg$(_c, "Title");
-$RefreshReg$(_c1, "Heading");
+var _c, _c1, _c2;
+$RefreshReg$(_c, "HeadingJsx");
+$RefreshReg$(_c1, "Title");
+$RefreshReg$(_c2, "Heading");
 
   $parcel$ReactRefreshHelpers$c1db.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react/jsx-dev-runtime":"iTorj"}],"21dqq":[function(require,module,exports) {
+},{"react":"21dqq","react-dom/client":"lOjBx","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","react/jsx-dev-runtime":"iTorj","./Heading":"c03Pz"}],"21dqq":[function(require,module,exports) {
 "use strict";
 module.exports = require("a569817e6ea559f6");
 
@@ -27426,6 +27482,76 @@ module.exports = require("ee51401569654d91");
     exports.jsxDEV = jsxDEV$1;
 })();
 
-},{"58362d9d82be395f":"21dqq"}]},["APLPM","1xC6H","2Ew96"], "2Ew96", "parcelRequiref3cf")
+},{"58362d9d82be395f":"21dqq"}],"c03Pz":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5aad = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5aad.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "HeadingComp", ()=>HeadingComp);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _headingCss = require("./heading.css");
+const HeadingComp = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "headingContainer",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                src: "https://do6gp1uxl3luu.cloudfront.net/banner+and+logos/name.png",
+                alt: "namasteDev",
+                width: "200",
+                height: "200"
+            }, void 0, false, {
+                fileName: "Heading.jsx",
+                lineNumber: 7,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                    type: "search"
+                }, void 0, false, {
+                    fileName: "Heading.jsx",
+                    lineNumber: 14,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "Heading.jsx",
+                lineNumber: 13,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                    src: "https://lh3.googleusercontent.com/a/ACg8ocK0Cfjfh6lqN8bctL-321m0h6kL6jCfocB64e8WdakQ3TOOZcaC=s96-c"
+                }, void 0, false, {
+                    fileName: "Heading.jsx",
+                    lineNumber: 17,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "Heading.jsx",
+                lineNumber: 16,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "Heading.jsx",
+        lineNumber: 6,
+        columnNumber: 5
+    }, undefined);
+};
+_c = HeadingComp;
+var _c;
+$RefreshReg$(_c, "HeadingComp");
+
+  $parcel$ReactRefreshHelpers$5aad.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./heading.css":"4CB9P"}],"4CB9P":[function() {},{}]},["APLPM","1xC6H","2Ew96"], "2Ew96", "parcelRequiref3cf")
 
 //# sourceMappingURL=index.7826abd7.js.map

@@ -1,0 +1,19 @@
+.headingContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.headingContainer:last-child{
+    height: 100px;
+    width: 100px;
+    /* overflow: hidden;
+     */
+     /* border-radius: 50%; */
+     border: 1px solid red;
+}
+
+.headingContainer:last-child img{
+    border-radius: 50%;
+    border: 1px solid red;
+}
